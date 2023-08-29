@@ -1,0 +1,138 @@
+.hero {
+  color: white;
+  padding: 3rem 2rem;
+  max-width: 50rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.hero h1 + p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero p {
+    margin: 1rem 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.hero h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.85rem;
+}
+
+@media screen and (max-width: 767px) {
+  .hero h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+  }
+}
+
+
+/* Create Account Styling */
+.createAccountContainer p{
+  margin-top: 16px;
+  margin-bottom: 1rem;
+}
+
+.createAccount {
+  margin-top: 16px;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .createAccount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+
+/* Get Started Styling */
+.getStartedContainer {
+  font-size: 1.13rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .getStartedContainer {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Email Input Styling */
+.emailInputContainer {
+  padding: 1.25rem 1rem;
+  padding-bottom: 0.25rem;
+  position: relative;
+  font-family: Netflix Sans, sans-serif;
+  flex-grow: 1;
+  min-height: 3.2rem;
+  cursor: text;
+}
+
+.emailInputContainer label {
+  transition: all 100ms;
+  color: hsl(0, 0%, 100%, 0.8);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+label.activeLabel {
+  font-size: 0.7rem;
+  top: 0.8rem;
+}
+
+.emailInputContainer input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: Netflix Sans, sans-serif;
+}
+
+@media (min-width: 600px) {
+  .emailInputContainer {
+    padding: 1.5rem 1rem;
+    padding-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,199 @@
+/* Netflix Sans font */
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Th.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Lt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Rg.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Md.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Bd.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2")
+      format("woff2"),
+    url("https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff")
+      format("woff"),
+    url("./assets/Fonts/NetflixSans_W_Blk.woff2") format("woff2");
+}
+
+/* Root variables */
+:root {
+  --Red: 357, 92%, 47%;
+  --Blue: 210, 100%, 50%;
+  --Dark-blue: 223, 56%, 17%;
+  --Light-gray: 0, 0%, 50%;
+  --Gray: 0, 0%, 9%;
+}
+
+/* Background gradient */
+.bg-grad {
+  background: radial-gradient(
+    99.93% 134.44% at 17.93% 0%,
+    #09143c 0%,
+    #101338 57.21%,
+    #400e20 99.57%
+  );
+}
+
+/* Movies section styles */
+#root {
+  display: grid;
+}
+
+#movies__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 72px 0;
+}
+
+#movies__main {
+  flex: 1;
+}
+
+.movies__container {
+  padding: 24px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.movies__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.section__title.movies__header--title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .section__title.movies__header--title {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+  }
+}
+
+.movies__header--title {
+  margin-bottom: 0;
+}
+
+.movies__container .MuiGrid-root {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .movies__container .MuiGrid-root {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+.movie {
+  padding: 24px;
+  transition: all 300ms ease;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie {
+    width: 100%;
+  }
+}
+
+.movie:hover {
+  transform: translateY(-4px);
+}
+
+.movie__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.movie__img {
+  max-height: 320px;
+  max-width: 250px;
+  transition: all 300ms ease;
+}
+
+.movie__img--skeleton {
+  width: 100%;
+  max-width: 250px;
+  height: 320px;
+  background-color: rgb(204, 204, 204);
+  margin-bottom: 8px;
+}
+
+.skeleton {
+  background-color: rgb(227, 227, 227) !important;
+  margin-bottom: 8px;
+}
+
+.movie__title--skeleton {
+  height: 21px;
+  width: 100%;
+}
+
+.movie__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.movie__link,
+.movie__title--link {
+  color: #242424;
+}

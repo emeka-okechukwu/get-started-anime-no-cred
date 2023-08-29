@@ -1,0 +1,16 @@
+.btnSignIn {
+  color: white;
+  background-color: hsl(var(--Red));
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-family: Netflix Sans, sans-serif;
+  min-height: 2.05rem;
+}
+
+.btnSignIn a {
+  font-size: 0.875rem;
+  padding: 0.3rem 1rem;
+  display: flex;
+  text-decoration: none;
+  line-height: 1.25rem;
+}

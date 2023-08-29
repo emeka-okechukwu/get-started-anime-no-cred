@@ -1,0 +1,13 @@
+.btnCard {
+  color: white;
+  background-color: hsl(var(--Red));
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-family: Netflix Sans, sans-serif;
+  transition: background-color 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.btnCard:hover {
+  background-color: hsl(357, 92%, 40%);
+}
