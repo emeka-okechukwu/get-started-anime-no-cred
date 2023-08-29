@@ -44,7 +44,7 @@ Before you begin, ensure you have the following tools installed:
    Open your terminal and run the following command:
 
    ```sh
-   git clone https://github.com/emeka-okechukwu-dev/get-started-anime.git
+   gh repo clone https://github.com/emeka-okechukwu-dev/get-started-anime.git
    ```
 
 2. Start the backend server
